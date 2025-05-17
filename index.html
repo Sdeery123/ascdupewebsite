@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASC Dupe Checker - Detect Duplicate ASC Payments</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="ascdupe.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="images/ascdupe.ico" alt="ASC Dupe Checker Logo" class="logo">
+                <h1>ASC Dupe Checker</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#download">Download</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="highlight-text">Prevent Double Payments</h2>
+                <p>ASC Dupe Checker helps financial departments quickly identify and manage duplicate payments in ASC payment files, reducing financial errors and improving transaction accuracy.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">Download Now <i class="fas fa-download"></i></a>
+                    <a href="#features" class="btn-secondary">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="images/screenshot.png" alt="ASC Dupe Checker Screenshot">
+                <div class="floating-badge">New v1.3.0</div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Key Features</h2>
+                <p>Discover how ASC Dupe Checker transforms your payment validation process</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapid Scanning</h3>
+                    <p>Process ASC payment files quickly and identify potential duplicates with precision.</p>
+                </div>
+                <div class="feature-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Visual Analysis</h3>
+                    <p>View comprehensive payment data visualizations using integrated OxyPlot and ScottPlot charts.</p>
+                </div>
+                <div class="feature-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Detailed Reporting</h3>
+                    <p>Generate reports of identified duplicate payments for easy review and action.</p>
+                </div>
+                <div class="feature-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Simple Interface</h3>
+                    <p>User-friendly WPF interface designed for finance professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>How It Works</h2>
+                <p>Understanding the duplicate detection process</p>
+            </div>
+            <div class="process-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-upload"></i>
+                        <div class="process-number">1</div>
+                    </div>
+                    <h3>Upload Files</h3>
+                    <p>Import your ASC payment files through a simple drag-and-drop interface.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-microscope"></i>
+                        <div class="process-number">2</div>
+                    </div>
+                    <h3>Analyze Data</h3>
+                    <p>The application scans files using intelligent algorithms to detect potential duplicates.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-list-check"></i>
+                        <div class="process-number">3</div>
+                    </div>
+                    <h3>Review Results</h3>
+                    <p>Examine the identified duplicates with detailed information to confirm findings.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-file-export"></i>
+                        <div class="process-number">4</div>
+                    </div>
+                    <h3>Export Report</h3>
+                    <p>Generate comprehensive reports that document all duplicate entries for further action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-specs" class="tech-specs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Technical Specifications</h2>
+                <p>Built with modern technologies for optimal performance</p>
+            </div>
+            <div class="specs-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="specs-list">
+                    <div class="spec-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>Development Framework</h3>
+                            <p>Built with C# and .NET 6.0 for high performance</p>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-window-maximize"></i>
+                        <div>
+                            <h3>User Interface</h3>
+                            <p>Windows Presentation Foundation (WPF) for responsive UI</p>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h3>Data Visualization</h3>
+                            <p>OxyPlot and ScottPlot integration for detailed analytics</p>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-server"></i>
+                        <div>
+                            <h3>Local Processing</h3>
+                            <p>All data processed locally for enhanced security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Download ASC Dupe Checker</h2>
+                <p>Get started today and improve your payment verification process</p>
+            </div>
+            <div class="download-card" data-aos="zoom-in">
+                <div class="version-badge">Current Version: 1.3.0</div>
+                <div class="download-content">
+                    <div class="download-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Windows Desktop Application</h3>
+                    <p>Compatible with Windows 10 and higher</p>
+                    <a href="https://github.com/Sdeery123/ASCDupeChecker/actions/runs/15085835099/artifacts/3144524176" class="btn-primary download-btn">
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                </div>
+                <div class="system-requirements">
+                    <h3><i class="fas fa-laptop-code"></i> System Requirements</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Windows 10 or higher</li>
+                        <li><i class="fas fa-check"></i> 64-bit processor</li>
+                        <li><i class="fas fa-check"></i> .NET 6.0 Runtime (included in package)</li>
+                        <li><i class="fas fa-check"></i> Minimum 4GB RAM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About ASC Dupe Checker</h2>
+                <p>Our story and mission</p>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-image">
+                    <img src="images/ascdupedemo.gif" alt="ASC Dupe Checker in action" class="about-gif">
+                </div>
+                <div class="about-text">
+                    <p>ASC Dupe Checker was developed to address duplicate payments in ASC payment files. By identifying duplicate payments before they're processed, this tool helps organizations prevent duplicate payment records.</p>
+                    <p>The application is optimized for the Reconciliation department handling ASC payment files and provides a robust solution for ensuring payment integrity.</p>
+                    <a href="#contact" class="btn-secondary">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in Touch</h2>
+                <p>Have questions? We're here to help</p>
+            </div>
+            <div class="contact-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="Technical Support">Technical Support</option>
+                                <option value="Feature Request">Feature Request</option>
+                                <option value="Bug Report">Bug Report</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sdeery@invoicecloud.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-code-branch"></i>
+                        <p>GitHub: <a href="https://github.com/Sdeery123/ASCDupeChecker" target="_blank">Sdeery123/ASCDupeChecker</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-info-circle"></i>
+                        <p>For fastest response, please include details about your environment and the specific file format you're working with.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                // Format the email body
+                const emailBody = `Name: ${name}
+Email: ${email}
+
+${message}
+
+---
+Sent from ASC Dupe Checker Website`;
+
+                // Create the mailto link
+                const mailtoLink = `mailto:sdeery@invoicecloud.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+                // Open the email client
+                window.location.href = mailtoLink;
+            });
+        </script>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/ascdupe.ico" alt="ASC Dupe Checker Logo" class="footer-logo">
+                    <p>Advanced duplicate payment detection for financial professionals.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Sdeery123/ASCDupeChecker" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init();
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
